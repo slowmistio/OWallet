@@ -26,7 +26,9 @@
     "packageWin": "yarn run pack && electron-builder --win --x64",
     "packageLin": "yarn run pack && electron-builder --linux --x64",
     "postinstall": "electron-builder install-app-deps && electron-rebuild --force --module_dir . -w node-hid -v 1.8.4",
-    "electron-rebuild": "electron-rebuild --force --module_dir . -w node-hid"
+    "electron-rebuild": "electron-rebuild --force --module_dir . -w node-hid",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "build": {
     "productName": "OWallet",
@@ -108,7 +110,8 @@
     "vue-i18n": "^8.0.0",
     "vue-router": "^2.5.3",
     "vuedraggable": "^2.16.0",
-    "vuex": "^2.3.1"
+    "vuex": "^2.3.1",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -164,5 +167,6 @@
     "webpack": "^3.5.2",
     "webpack-dev-server": "^2.7.1",
     "webpack-hot-middleware": "^2.18.2"
-  }
+  },
+  "snyk": true
 }
