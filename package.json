@@ -94,7 +94,7 @@
     "electron-winstaller": "^2.6.4",
     "font-awesome": "^4.7.0",
     "global": "^4.3.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "nedb": "^1.8.0",
     "numeral": "^2.0.6",
     "ontology-ts-sdk": "^0.9.7",
